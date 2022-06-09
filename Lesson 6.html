@@ -8,15 +8,21 @@
 </head>
 <body>
     <h1> Hello. What is your name? </h1>
-    <input> <br> <br> 
-    <button onclick="myFunction()">  </button> Submit </button>
+    <input id="userInput"> <br> <br> 
+    <button onclick="myFunction()"> Submit </button>
+<h1 id="message"> </h1>
 
 <style> 
 body {background-color: cadetblue; text-align: center; color:floralwhite;} 
 </style> 
 
 <script> 
-function myFunction ()
+function myFunction () {
+   let userInput = document.querySelector("#userInput");
+   let message = document.querySelector("#message");
+   
+   message.innerHTML = "Welcome to my webpage, " + userInput.value;
+} 
 
 </script>
 
