@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #first {float: left; padding: 5%;}
+        #last {float: left; padding: 5%;}
+    </style>
+</head>
+<body>
+    <h1>My Quiz</h1> <br>
+    <div id="first">
+        <h2>Questions</h2> 
+        <button onclick="next1()">Next Question</button>
+        <h2 id="firstName"></h2>
+        <input>
+    </div>
+    
+    <script>
+        var firstNames = ["What is 2 + 2?", "What is 3 + 3", "What is 4 + 4"]
+        var showFirstName = document.querySelector("#firstName");
+        var number = 0
+        var lastNames = ["4", "6", "8"]
+        var showLastName = document.querySelector("#lastName");
+       
+        function next1() {
+            showFirstName.innerHTML = firstNames[number]
+            showLastName.innerHTML = lastNames[number]
+            number += 1
+            if (number == 6) {
+                number = 0
+            }
+        }
+    </script>
+</body>
+</html>
