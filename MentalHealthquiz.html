@@ -5,53 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mental Health Quiz </title>
+
+    <style> 
+        #intro {text-align: center; color:darksalmon}
+        body {background-color:mistyrose;}
+    
+    </style>
+
 </head>
 <body>
     <div id="intro">
         <h1> Welcome to my Mental Health Quiz </h1>
         <h2> What is your name? </h2> <br>
     </div>
-    <input id="userName">
-    <button on click="greeting()">Submit</button>
 
-</div>
-<h1 id="message"> </h1>
-    
+
     <div id="Mental health Quiz"> 
     <h3> How are you feeling right now? </h3>
-    <input> <br> <br> 
-    <button onclick="myFunction"> Submit </button>
-   
-</div>
-    <style> 
-    #intro {text-align: center; color:darksalmon}
-    body {background-color:mistyrose;}
-
-    </style>
-
-<div id="question"> 
-<h3>  </h3>
-<input> <br> <br> 
-<button onclick="myFunction"> Submit </button>
+    <input id="mentalHealth"> <br> <br> 
+    <button onclick="myFunction()"> Submit </button>
+   <h1 id ="submit"> </h1>
 </div>
 
 
-
-
-    
-</div>
 <script>
-    function myFunction () {
-        let userInput =document.querySelector("#userInput");
-        let message =document.querySelector("message");
+function myFunction() {
+    let mentalHealth = document.querySelector ("#mentalHealth");
+    let submit = document.querySelector ("#submit");
 
-        message.innerHTML = "Test";
+}
 
 
-    }
-
-let userName = document.querySelector("#userName")
-    </script>
+</script>
 
 
 </body>
