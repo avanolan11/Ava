@@ -22,16 +22,25 @@
 
     <div id="Mental health Quiz"> 
     <h3> How are you feeling right now? </h3>
-    <input id="mentalHealth"> <br> <br> 
+    <input id="userInput"> <br> <br> 
     <button onclick="myFunction()"> Submit </button>
    <h1 id ="submit"> </h1>
 </div>
 
+<div id="Mental health Quiz"> 
+<h3> Is there any support you might need to help you? </h3>
+
+</div>
 
 <script>
 function myFunction() {
-    let mentalHealth = document.querySelector ("#mentalHealth");
+    let userInput = document.querySelector ("#userInput");
     let submit = document.querySelector ("#submit");
+
+
+    submit.innerHTML = "Thank you for taking the time to complete our quiz " + userInput;
+
+
 
 }
 
