@@ -34,13 +34,13 @@
 </div>
 
 <div id="Mental health Quiz"> 
-<h2> Is there any sort of support that would help you get through this tough time?</h2>
+<h3> Is there any sort of support that would help you get through this tough time?</h2>
 <input id="userInput"> <br> <br> 
 <button onclick="myFunction()"> Submit </button>
 <h2 id="submit"> </h2>
 
 <div id="Mental health Quiz">
-<h2> What was something that happened to you or you experienced that made you feel good?</h2>
+<h3> What was something that happened to you or you experienced that made you feel good?</h2>
 <input id="userInput"> <br> <br> 
 <button onclick="myFunction()"> Submit </button>
 <h2 id="submit"> </h2>
@@ -49,10 +49,10 @@
 <script>
 function myFunction() {
     let userInput = document.querySelector ("#userInput");
-    let finished = document.querySelector ("#finished");
+    let finished = document.querySelector ("#submit");
 
 
-    finished.innerHTML = "Thank you for taking the time to complete our quiz " + userInput;
+    submit.innerHTML = "Thank you for taking the time to complete our quiz " + userInput;
 
 }
 </script>
