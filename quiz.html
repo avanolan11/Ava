@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Quiz </title>
+
+    <style> 
+        #intro {text-align: center; color:darksalmon}
+        body {background-color:mistyrose;}
+    
+    </style>
+
+</head>
+<body>
+    <div id="intro">
+        <h1> Welcome to my Mental Health Quiz </h1>
+    </div>
+
+
+    <div id="Mental health Quiz"> 
+    <h3> How are you feeling right now? </h3>
+    <input id="userInput"> <br> <br> 
+    <button onclick="myFunction()"> Submit </button>
+   <h1 id="submit"> </h1>
+</div>
+
+<div id="Mental health Quiz"> 
+<h3> What was something that you found difficult or held you back? </h3>
+<input id="userInput"> <br> <br> 
+<button onclick="myFunction()"> Submit </button>
+<h1 id="submit"> </h1>
+</div>
+
+<div id="Mental health Quiz"> 
+<h3> Is there any sort of support that would help you get through this tough time?</h2>
+<input id="userInput"> <br> <br> 
+<button onclick="myFunction()"> Submit </button>
+<h2 id="submit"> </h2>
+
+<div id="Mental health Quiz">
+<h3> What was something that happened to you or you experienced that made you feel good?</h2>
+<input id="userInput"> <br> <br> 
+<button onclick="myFunction()"> Submit </button>
+<h2 id="submit"> </h2>
+</div> 
+<script>
+    let userInput = document.querySelector ("#userInput");
+    let finished = document.querySelector ("#submit");
+function myFunction() {
+    finished.innerHTML = "Thank you for taking the time to complete our quiz " + userInput.value;
+
+}
+</script>
+
+
+</body>
+</html>
