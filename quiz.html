@@ -15,7 +15,7 @@
 </head>
 <body>
     <div id="intro">
-        <h1> Welcome to my Mental Health Quiz </h1>
+        <h1> Welcome to my Mental Health Quiz </h1> 
     </div>
     <div id="qn1"> 
     <h3> How are you feeling right now? </h3>
@@ -28,7 +28,7 @@
 <div id="qn2"> 
 <h3> What was something that you found difficult or held you back? </h3>
 <input id="userInput"> <br> <br> 
-<button onclick="myFunction()">  </button>
+<button onclick="myFunction()"> Submit </button>
 <h1 id="submit"> </h1>
 </div>
 
@@ -36,13 +36,13 @@
 <div id="qn3"> 
 <h3> Is there any sort of support that would help you get through this tough time?</h2>
 <input id="userInput"> <br> <br> 
-<button onclick="myFunction()"> </button>
+<button onclick="myFunction()"> Submit </button>
 <h2 id="submit"> </h2>
 
 <div id="qn4">
 <h3> What was something that you experienced which made you feel good?</h2>
 <input id="userInput"> <br> <br> 
-<button onclick="myFunction()"> </button>
+<button onclick="myFunction()"> Submit </button>
 <h2 id="submit"> </h2>
 </div> 
 
@@ -55,16 +55,23 @@
     let qn4 = document.querySelector ('#qn4')
 
 
-function myFunction() {
     qn1.style.display ='block';
     qn2.style.display ='none';
     qn3.style.display ='none';
     qn4.style.display ='none';
 
     function myFunction() {
-    qn2.style.display = 'block';
+    qn2.style.display = 'none';
     }
-}
+    qn3.style.display ='block';
+    qn4.style.display ='none';
+    qn1.style.display ='none';
+    qn3.style.display ='block';
+    qn4.style.display ='block';
+    
+    
+    
+
 </script>
 
 
